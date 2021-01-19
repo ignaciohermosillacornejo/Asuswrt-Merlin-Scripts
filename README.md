@@ -5,7 +5,7 @@ Miscellaneous Linux Shell Scripts developed for my personal Asuswrt-Merlin home 
 
 This scripts are targeted to be used on Asus routers running the modified [Asuswrt-Merlin](https://www.asuswrt-merlin.net/) software. To use this scripts you must first have.
 
-1. [Enable SSH access](https://www.htpcguides.com/enable-ssh-asus-routers-without-ssh-keys/), If you want to acces via SSH throught the open internet (LAN + WAN) i **highly** recommend changing the port and disabling username password authentication (only using RSA keys).
+1. [Enable SSH access](https://www.htpcguides.com/enable-ssh-asus-routers-without-ssh-keys/), If you want to acces via SSH throught the open internet (LAN + WAN) I **highly** recommend changing the port and disabling username password authentication (only using RSA keys).
 2. Enable Custom Scripts. Go to Administration -> System -> Persistent JFFS2 partition and make sure that Enable JFFS custom scripts and configs is selected as "yes"
 
 # Push Over
