@@ -10,13 +10,21 @@ This scripts are targeted to be used on Asus routers running the modified [Asusw
 
 # Push Over
 
-[Pushover](https://pushover.net/) is a service that enables to easily send Push Notifications to devices, I like it because by paying just once in a lifetime ($4.99 USD as of 2020) I get 7.500 free push notifications a month, more than enough for my personal needs. After installing the App on your smartphone, SSH in your router and create the file `/jffs/scripts/credentials.sh` with the following content:
+[Pushover](https://pushover.net/) is a service that enables to easily send Push Notifications to devices, I like it because by paying just once in a lifetime ($4.99 USD as of 2020) I get 7.500 free push notifications a month, more than enough for my personal needs. After installing the App on your smartphone, SSH in your router and create the file `/jffs/scripts/credentials.sh` using nano or another tool with the following content:
 
 ```Shell
 #!/bin/sh
 
 export pushover_token="<Your pushover token goes here>"
 export pushover_user="<Your pushover user goes here>"
+```
+
+If you are unsure as to how to use nano or a similar tool to create your `credentials.sh` file, you can run the following commands to create it:
+
+```Shell
+echo '#!/bin/sh' >> /jffs/scripts/credentials.sh
+echo 'export pushover_token="<Your pushover token goes here>"' >> /jffs/scripts/credentials.sh
+echo 'export pushover_user="<Your pushover user goes here>"' >> /jffs/scripts/credentials.sh
 ```
 
 # Get notified about firmware updates
